@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulación del DOM</title>
+</head>
+<body>
+    <script>
+        // Crear un botón
+        let boton = document.createElement("button");
+        boton.id = "btnCarrito";
+        boton.innerHTML = "Agregar al carrito";
+
+        boton.addEventListener("click", function() {
+
+            let mensaje = document.createElement("h3");
+            mensaje.innerHTML = "Agregado";
+            document.body.appendChild(mensaje);
+            boton.innerHTML = "Agregado"; 
+        });
+
+        document.body.appendChild(boton);
+    </script>
+</body>
+</html>
