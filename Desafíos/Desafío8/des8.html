@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saludos</title>
+</head>
+<body>
+    <script>
+        let nombres = ["Leandro", "Alex", "Shiro", "Melanie", "Vanessa"];
+
+        for (let nombre of nombres) {
+            let nuevoNombre = document.createElement("h2");
+            nuevoNombre.innerText = `Hola ${nombre}!`;
+            document.body.appendChild(nuevoNombre);
+        }
+    </script>
+</body>
+</html>
